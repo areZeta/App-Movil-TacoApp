@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com.com/apk/res-auto">
+
+    <item
+        android:id="@+id/btnMas"
+        android:icon="@drawable/ic_baseline_3_points"
+        android:title="Opciones"
+        app:showAsAction="always">
+        <menu>
+
+            <item
+                android:id="@+id/btnPedidos"
+                android:icon="@drawable/ic_baseline_pending_actions_24"
+                android:title="Sus pedidos"/>
+            <item
+                android:id="@+id/btnInfor"
+                android:icon="@drawable/ic_baseline_email_24"
+                android:title="Contactanos"/>
+            <item
+                android:id="@+id/btnLogOut"
+                android:icon="@drawable/ic_baseline_assignment_return_24"
+                android:title="Cerrar sesión"/>
+
+        </menu>
+
+    </item>
+</menu>

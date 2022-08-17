@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/imagen_a"
+    tools:context=".UbicacionActivity">
+
+        <ScrollView
+            android:layout_width="340dp"
+            android:layout_height="550dp"
+            android:background="@drawable/imagen_a"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.25">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#CEE3AC81"
+                    android:text="Nos ubicamos..."
+                    android:textAlignment="center"
+                    android:textColor="#070606"
+                    android:textSize="24sp"
+                    android:textStyle="bold|italic"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="71dp"
+                    tools:layout_editor_absoluteY="72dp" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    app:srcCompat="@drawable/lore"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="34dp" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text=""
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="71dp"
+                    tools:layout_editor_absoluteY="72dp" />
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#CEE3AC81"
+                    android:text="Estamos ubicados en la Comunidad de Guadalupe Tepanacitla en el municipio de Huatlatlauca a un costado del Kinder y detras del Juzgado de Paz de la comunidad."
+                    android:textAlignment="center"
+                    android:textColor="#070606"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="71dp"
+                    tools:layout_editor_absoluteY="72dp" />
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text=""
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="71dp"
+                    tools:layout_editor_absoluteY="72dp" />
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#CEE3AC81"
+                    android:text="Contactanos..."
+                    android:textAlignment="center"
+                    android:textColor="#070606"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="71dp"
+                    tools:layout_editor_absoluteY="72dp" />
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:columnCount="4"
+                    android:orientation="vertical"
+                    android:rowCount="1">
+
+                    <EditText
+                        android:id="@+id/editTextEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:ems="10"
+                        android:layout_row="0"
+                        android:layout_column="0"
+                        android:inputType="textPersonName"
+                        android:hint="Ingresa tu e-mail"
+                        android:textColor="#0B0A0A"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.442"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.38" />
+
+
+                    <ImageButton
+                        android:id="@+id/imgBtnEmail"
+                        android:layout_width="120dp"
+                        android:layout_height="70dp"
+                        android:layout_row="0"
+                        android:layout_column="1"
+                        android:backgroundTint="#A67A63"
+                        android:foregroundTint="#D8A361"
+                        app:srcCompat="@android:drawable/ic_dialog_email"
+                        tools:ignore="MissingConstraints"
+                        tools:layout_editor_absoluteX="80dp"
+                        tools:layout_editor_absoluteY="664dp" />
+
+
+                </GridLayout>
+            </LinearLayout>
+        </ScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

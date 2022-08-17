@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PedidosActivity"
+    android:background="@drawable/imagen_a">
+    <ScrollView
+        android:layout_width="400dp"
+        android:layout_height="550dp"
+        android:background="@drawable/imagen_a"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#CEE37926"
+                android:text="Busqueda de su pedido por ID"
+                android:textAlignment="center"
+                android:textColor="#070606"
+                android:textSize="24sp"
+                android:textStyle="bold|italic"
+                tools:ignore="MissingConstraints"
+                android:layout_marginBottom="30dp"/>
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:columnCount="2"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:rowCount="1"
+                tools:layout_editor_absoluteX="266dp"
+                tools:layout_editor_absoluteY="344dp">
+
+                <EditText
+                    android:id="@+id/editTextID"
+                    android:layout_width="195dp"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:ems="10"
+                    android:hint="Ingrese ID de su pedido"
+                    android:inputType="textPersonName"
+                    android:paddingRight="10dp"
+                    android:textAlignment="center"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnBuscarID"
+                    android:layout_width="110dp"
+                    android:layout_height="49dp"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:backgroundTint="#0E930F"
+                    android:paddingLeft="20dp"
+                    android:text="Buscar"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.928"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="206dp" />
+
+            </GridLayout>
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="4"
+                android:orientation="horizontal"
+                android:rowCount="2"
+                android:layout_marginBottom="40dp"
+                tools:layout_editor_absoluteX="266dp"
+                tools:layout_editor_absoluteY="344dp">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#CEE37926"
+                    android:columnCount="0"
+                    android:rowCount="0"
+                    android:text="ID pedido "
+                    android:textAlignment="textStart"
+                    android:textColor="#050505"
+                    android:textSize="16sp"
+                    android:textStyle="bold|italic"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="160dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#CEE37926"
+                    android:columnCount="1"
+                    android:rowCount="0"
+                    android:text=" Descrpcion de pedido "
+                    android:textAlignment="textStart"
+                    android:textColor="#050505"
+                    android:textSize="16sp"
+                    android:textStyle="bold|italic"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#CEE37926"
+                    android:columnCount="2"
+                    android:rowCount="0"
+                    android:text=" Fecha "
+                    android:textAlignment="textStart"
+                    android:textColor="#050505"
+                    android:textSize="16sp"
+                    android:textStyle="bold|italic"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#CEE37926"
+                    android:columnCount="3"
+                    android:foregroundTint="#F41010"
+                    android:rowCount="0"
+                    android:text=" Estado "
+                    android:textAlignment="textStart"
+                    android:textColor="#050505"
+                    android:textSize="16sp"
+                    android:textStyle="bold|italic"
+                    tools:ignore="MissingConstraints" />
+                <TextView
+                    android:id="@+id/textViewID"
+                    android:layout_width="70dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#CEE37926"
+                    android:columnCount="0"
+                    android:hint=" "
+                    android:rowCount="1"
+                    android:textAlignment="textStart"
+                    android:textColor="#050505"
+                    android:textSize="13sp"
+                    android:textStyle="italic"
+                    tools:ignore="MissingConstraints" />
+                <TextView
+                    android:id="@+id/textViewDescrip"
+                    android:layout_width="160dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#CEE37926"
+                    android:columnCount="1"
+                    android:hint="  "
+                    android:rowCount="1"
+                    android:textAlignment="textStart"
+                    android:textColor="#050505"
+                    android:textSize="13sp"
+                    android:textStyle="italic"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/textViewFecha"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#CEE37926"
+                    android:columnCount="2"
+                    android:hint=" "
+                    android:rowCount="0"
+                    android:textAlignment="textStart"
+                    android:textColor="#050505"
+                    android:textSize="13sp"
+                    android:textStyle="italic"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="173dp"
+                    tools:layout_editor_absoluteY="349dp" />
+
+                <TextView
+                    android:id="@+id/textViewEstado"
+                    android:layout_width="70dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#CEE37926"
+                    android:columnCount="3"
+                    android:foregroundTint="#F41010"
+                    android:rowCount="1"
+                    android:textAlignment="textStart"
+                    android:textColor="#050505"
+                    android:textSize="13sp"
+                    android:textStyle="italic"
+                    tools:ignore="MissingConstraints" />
+            </GridLayout>
+
+
+            <Button
+                android:id="@+id/btnRecibido"
+                android:layout_width="160dp"
+                android:layout_height="49dp"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_gravity="center"
+                android:backgroundTint="#0E930F"
+                android:paddingLeft="20dp"
+                android:text="Marcar como Recibida"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.928"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="206dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
